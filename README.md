@@ -1,1 +1,2 @@
-# ionic-messenger
+# Ionic Messenger Starter
+

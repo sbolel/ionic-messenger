@@ -1,0 +1,85 @@
+.fill {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+.vertical-align {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.right {
+  text-align: right;
+}
+.left {
+  text-align: left;
+}
+.has-keyboard {
+  top: 0;
+  position: relative;
+  height: 510px;  /* should remove this and include css for each device separately */
+}
+.iphone7_2 .has-keyboard,
+.iphone8_1 .has-keyboard {
+  height: 452px;
+}
+.iphone7_1 .has-keyboard,
+.iphone8_2 .has-keyboard {
+  height: 510px;
+}
+
+.order-card {
+  margin: 10px !important;
+}
+
+#user-view form .item-input {
+  left: 0;
+  right:0;
+  bottom: 0;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-left: 1px;
+  padding-right: 1px;
+  position: absolute;
+}
+#user-view form .item-input {
+  border-bottom: 1px solid #BDBDBD;
+}
+#user-view form .item-input input {
+  min-width: 100%;
+  font-size: 26px;
+  font-weight: 200;
+  letter-spacing: 0.5px;
+  line-height: normal;
+  text-align: center;
+}
+#user-view ion-footer-bar,
+#user-view ion-footer-bar button {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+#user-view ion-footer-bar button {
+  height: 45px;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 0.5pt;
+}
+
+.hero-frame {
+    text-align: center; 
+    white-space: nowrap;
+    height: 464px;  /* NOT CROSS-DEVICE (ONLY FOR 6+) */
+}
+.hero-frame .helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+.hero-frame img {
+    max-height: 200px;
+    max-width: 200px;
+    vertical-align: middle;
+}

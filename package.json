@@ -1,14 +1,47 @@
 {
   "name": "ionic-messenger",
   "version": "0.1.0",
-  "private": true,
-  "author": "Sinan Bolel <sinanbolel@gmail.com>",
-  "description": "ionic-messenger",
+  "description": "Ionic Messenger Starter",
+  "author": "Sinan Bolel <sinan@thinkcrazy.co>",
   "homepage": "https://thinkcrazy.co",
   "scripts": {
     "postinstall": "bower update",
     "prestart": "npm update"
   },
-  "devDependencies": {},
-  "dependencies": {}
+  "devDependencies": {
+    "bower": "^1.7.2",
+    "del": "^2.2.0",
+    "gulp": "^3.9.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-copy": "0.0.2",
+    "gulp-header": "^1.7.1",
+    "gulp-insert": "^0.5.0",
+    "gulp-minify-css": "^1.2.3",
+    "gulp-ng-annotate": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.1.1",
+    "gulp-serve": "^1.2.0",
+    "gulp-uglify": "^1.5.1",
+    "gulp-util": "^3.0.7",
+    "shelljs": "^0.5.3"
+    },
+  "dependencies": {},
+  "cordovaPlugins": [
+    "cordova-plugin-console",
+    "cordova-plugin-dialogs",
+    "cordova-plugin-statusbar",
+    "cordova-plugin-splashscreen",
+    "ionic-plugin-keyboard",
+    "cordova-plugin-inappbrowser",
+    "cordova-plugin-device",
+    "cordova-plugin-whitelist"
+  ],
+  "cordovaPlatforms": [
+    "ios",
+    {
+      "platform": "ios",
+      "version": "",
+      "locator": "ios"
+    }
+  ]
 }
