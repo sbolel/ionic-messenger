@@ -1,0 +1,14 @@
+{
+  "name": "ionic-messenger",
+  "version": "0.1.0",
+  "private": true,
+  "author": "Sinan Bolel <sinanbolel@gmail.com>",
+  "description": "ionic-messenger",
+  "homepage": "https://thinkcrazy.co",
+  "scripts": {
+    "postinstall": "bower update",
+    "prestart": "npm update"
+  },
+  "devDependencies": {},
+  "dependencies": {}
+}
