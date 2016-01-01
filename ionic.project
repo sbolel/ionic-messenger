@@ -1,6 +1,6 @@
 {
   "name": "ionic-messenger",
-  "app_id": "",
+  "app_id": "7728863d",
   "gulpStartupTasks": [],
   "watchPatterns": [
     "www/**/*",

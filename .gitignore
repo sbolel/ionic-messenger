@@ -3,3 +3,5 @@
 !.bowerrc
 **/bower_components/*
 **/node_modules/*
+platforms/
+*.zip
