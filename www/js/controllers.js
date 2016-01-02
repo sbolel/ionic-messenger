@@ -1,13 +1,6 @@
 angular.module('messenger.controllers', [])
 
-.controller('LoginController', function ($scope, $state, $ionicPopup) {
-  var AlertPopup = function(title, template){
-    var popup = $ionicPopup.alert({
-      title: title || 'Uh oh!',
-      template: template || 'Something went wrong!'
-    });
-    return popup;
-  };
+.controller('LoginController', function ($scope, $state, AlertPopup) {
   $scope.login = function() {
     var alert = new AlertPopup('Thanks for trying!', 'We\'re working on authentication :)');
     alert.then(function(){
@@ -16,20 +9,24 @@ angular.module('messenger.controllers', [])
   };
 })
 
-.controller('SettingsController', function($scope, $state, $ionicActionSheet){
-  $scope.show = function(callback) {
+.controller('SettingsController', function($scope, $state, $ionicActionSheet, AlertPopup){
+  $scope.logout = function() {
    var hideSheet = $ionicActionSheet.show({
-      destructiveText: 'Log out',
       titleText: 'Are you sure?',
+      destructiveText: 'Log out',
       cancelText: 'Cancel',
       cancel: function() {
          },
       destructiveButtonClicked: function() {
-        return callback();
+        hideSheet();
+        return alertCallback();
       }
     });
   };
-  $scope.logout = function(){
-    $scope.show();
-  };
+  function alertCallback(){
+    var alert = new AlertPopup('Thanks for trying!', 'We\'re working on authentication :)');
+    return alert.then(function(){
+      $state.go('app.login');
+    });
+  }
 });
