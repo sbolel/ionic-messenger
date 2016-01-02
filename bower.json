@@ -1,11 +1,10 @@
 {
   "name": "ionic-messenger",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Ionic Messenger Starter",
   "author": "Sinan Bolel <sinan@thinkcrazy.co>",
   "devDependencies": {},
   "dependencies": {
-    "ionic": "~1.2.1",
-    "angular-touch": "~1.4.3"
+    "ionic": "~1.2.1"
   }
 }

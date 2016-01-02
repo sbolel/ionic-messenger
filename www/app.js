@@ -4,9 +4,7 @@ angular.module('messenger', [
   'messenger.services'
 ])
 
-.constant('AUTHSTATE', 'app.tabs.recent')
-
-.run(function ($rootScope, $state, AUTHSTATE){
+.run(function ($rootScope, $state){
   ionic.Platform.ready(function() {
     if (window.cordova && window.cordova.plugins.Keyboard) {
       cordova.plugins.Keyboard.hideKeyboardAccessoryBar(true);

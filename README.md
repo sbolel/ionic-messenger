@@ -1,7 +1,5 @@
 # Ionic Messenger Starter
 
-
-
-_a work in progress_
+http://market.ionic.io/starters/ionic-messenger
 
 ![screenshots](./docs/img/screenshots.png)

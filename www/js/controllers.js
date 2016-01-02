@@ -1,14 +1,18 @@
 angular.module('messenger.controllers', [])
 
-.controller('LoginController', function ($scope, $state, $ionicPopup, AUTHSTATE) {
-  var AlertPopup = function(){
+.controller('LoginController', function ($scope, $state, $ionicPopup) {
+  var AlertPopup = function(title, template){
     var popup = $ionicPopup.alert({
-      title: 'Uh oh!',
-      template: 'Something went wrong!'
+      title: title || 'Uh oh!',
+      template: template || 'Something went wrong!'
     });
     return popup;
   };
   $scope.login = function() {
+    var alert = new AlertPopup('Thanks for trying!', 'We\'re working on authentication :)');
+    alert.then(function(){
+      $state.go('app.tabs.recent');
+    })
   };
 })
 
@@ -25,7 +29,6 @@ angular.module('messenger.controllers', [])
       }
     });
   };
- 
   $scope.logout = function(){
     $scope.show();
   };
