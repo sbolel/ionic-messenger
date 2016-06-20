@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>Ionic Messenger</title>
+    <link href="lib/ionic.min.css" rel="stylesheet">
+    <link href="assets/css/app.css" rel="stylesheet">
+    <script src="lib/ionic.bundle.min.js"></script>
+    <script src="cordova.js"></script>
+    <script src="app.js"></script>
+    <script src="js/services.js"></script>
+    <script src="js/controllers.js"></script>
+  </head>
+  <body ng-app="messenger">
+    <ion-nav-bar class="bar-clear">
+      <ion-nav-back-button></ion-nav-back-button>
+    </ion-nav-bar>
+    <ui-view></ui-view>
+  </body>
+</html>

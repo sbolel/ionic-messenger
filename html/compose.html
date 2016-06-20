@@ -1,0 +1,41 @@
+<ion-modal-view>
+  <ion-header-bar class="bar-stable">
+    <div class="buttons">
+      <button class="button button-clear button-positive" ng-click="closeMessage()">Cancel</button>
+    </div>
+    <h1 class="title">New Message</h1>
+    <div class="buttons">
+      <button class="button button-clear button-positive disabled" ng-click="">Group</button>
+    </div>
+  </ion-header-bar>
+
+  <div class="bar bar-subheader bar-stable" style="padding:0">
+    <div class="item item-input-inset" style="padding:0;height:100%;background:none">
+      <span class="input-label" style="width:auto;padding-left:8px;padding-right:2px;;background:none">To:</span>
+        <span ng-repeat="person in message.reecipients">
+         {{::person.name}}
+        </span>
+      <label class="item-input-wrapper" style="padding:0;background:none">
+        <input ng-model="newMessage.search" type="text">
+      </label>
+    </div>
+  </div>
+
+  <ion-content class="has-subheader">
+    <ion-list>
+      <ion-item ng-repeat="(key, person) in contacts" ng-click="addRecipient(person)">
+        {{key}}
+      </ion-item>
+  </ion-content>
+
+  <ion-footer-bar class="bar-stable">
+    <form name="newMessageForm" class="item-input-inset" style="min-width:100%;">
+      <label class="item-input-wrapper" style="background-color:white;border:#e3e3e3 1px solid">
+        <input ng-model="newMessage.content" name="newMessageContent" type="text" style="min-width:100%;" required>
+      </label>
+      <button class="button button-clear button-small" ng-class="{'button-positive': hasRecipients}" ng-disabled="!newMessage.content || newMessage.content==='' || !hasRecipients" ng-click="submitConversation()">
+        Send
+      </button>
+    </form>
+  </ion-footer-bar>
+</ion-modal-view>
