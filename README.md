@@ -1,11 +1,11 @@
 # Ionic Messenger
 
-http://market.ionic.io/starters/ionic-messenger
+Ionic Market Page: http://market.ionic.io/starters/ionic-messenger
 
 #### Demo
 
-1. Ionic View –&nbsp; `{appId: "7728863d"}`
-2. Browser – https://ionic-messenger.firebaseapp.com 
+* Ionic View: `{appId: "7728863d"}`
+* Browser: https://sbolel.github.io/ionic-messenger
 
 ## Getting Started
 
@@ -16,8 +16,6 @@ or clone the repository from GitHub:
     git clone https://github.com/sbolel/ionic-messenger
 
 or if you're feeling generous, purchase it from Ionic Market :D
-
-#### Notes
 
 The Bower installation directory is set to `./bower_components` in [.bowerrc](https://github.com/sbolel/ionic-messenger/blob/master/.bowerrc) (as opposed to the standard `./www/lib`). [`gulpfile.js`](https://github.com/sbolel/ionic-messenger/blob/master/gulpfile.js) implements copying of dependencies to /www/lib.
 
