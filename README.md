@@ -13,13 +13,13 @@ Download [ionic-messenger.zip](https://s3.amazonaws.com/ionic-marketplace/ionic-
 
 or clone the repository from GitHub:
 
-    git clone https://github.com/thinkcrazy/ionic-messenger
+    git clone https://github.com/sbolel/ionic-messenger
 
 or if you're feeling generous, purchase it from Ionic Market :D
 
 #### Notes
 
-The Bower installation directory is set to `./bower_components` in [.bowerrc](https://github.com/thinkcrazy/ionic-messenger/blob/master/.bowerrc) (as opposed to the standard `./www/lib`). [`gulpfile.js`](https://github.com/thinkcrazy/ionic-messenger/blob/master/gulpfile.js) implements copying of dependencies to /www/lib.
+The Bower installation directory is set to `./bower_components` in [.bowerrc](https://github.com/sbolel/ionic-messenger/blob/master/.bowerrc) (as opposed to the standard `./www/lib`). [`gulpfile.js`](https://github.com/sbolel/ionic-messenger/blob/master/gulpfile.js) implements copying of dependencies to /www/lib.
 
 ## Backlog
 

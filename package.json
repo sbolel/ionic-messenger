@@ -1,23 +1,27 @@
 {
   "name": "ionic-messenger",
-  "version": "0.1.1",
+  "version": "1.0.0",
+  "public": true,
   "description": "Ionic Messenger Starter",
-  "author": "Sinan Bolel <sinan@thinkcrazy.co>",
-  "homepage": "https://thinkcrazy.co",
+  "author": "Sinan Bolel <sinanbolel@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/sbolel/ionic-messenger.git"
+  },
   "scripts": {
     "postinstall": "bower update",
     "prestart": "npm update"
   },
   "devDependencies": {
-    "bower": "^1.7.2",
-    "gulp": "^3.9.0",
+    "bower": "^1.7.9",
+    "gulp": "^3.9.1",
     "gulp-concat": "^2.6.0",
-    "gulp-ng-annotate": "^1.1.0",
+    "gulp-ng-annotate": "^2.0.0",
     "gulp-replace": "^0.5.4",
-    "gulp-sass": "^2.1.1",
+    "gulp-sass": "^2.3.2",
     "gulp-serve": "^1.2.0",
     "gulp-util": "^3.0.7",
-    "shelljs": "^0.5.3"
+    "shelljs": "^0.7.0"
   },
   "dependencies": {},
   "cordovaPlugins": [
